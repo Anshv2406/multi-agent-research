@@ -4,10 +4,6 @@ A 5-agent AI pipeline that researches any topic end-to-end: searches the web, sc
 the most relevant source, drafts a structured report, fact-checks it against the
 source material, and critiques the final output — all shown live in a Streamlit UI.
 
-Adapted from [Complete-Agentic-AI-Course](https://github.com/entbappy/Complete-Agentic-AI-Course),
-extended from a 4-agent pipeline to 5 (added a fact-checking stage), and ported from
-the original LLM setup to **Gemini** (primary) with **Grok** as an automatic fallback.
-
 ## Pipeline
 
 ```
@@ -75,7 +71,3 @@ See [LIMITATIONS.md](./LIMITATIONS.md) for a full breakdown of where and why thi
 pipeline can fail in real-world use — model deprecation, rate limits, scraping
 fragility, hallucination risk, and deployment cold-starts — and which of those are
 already mitigated.
-
-## Credits
-
-Original 4-agent course project by [entbappy](https://github.com/entbappy/Complete-Agentic-AI-Course).
