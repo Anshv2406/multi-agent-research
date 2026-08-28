@@ -14,7 +14,7 @@ source material, and critiques the final output — all shown live in a Streamli
 **Pipeline complete — all 5 agents done**
 ![Pipeline complete](./screenshots/s2.png)
 
-**Final research report**
+**Final research report (excerpt)**
 ![Report](./screenshots/s3.png)
 ![Report continued](./screenshots/s4.png)
 
