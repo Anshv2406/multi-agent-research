@@ -4,16 +4,22 @@ A 5-agent AI pipeline that researches any topic end-to-end: searches the web, sc
 the most relevant source, drafts a structured report, fact-checks it against the
 source material, and critiques the final output — all shown live in a Streamlit UI.
 
+**Live demo:** [multi-agent-research-g4ex.onrender.com](https://multi-agent-research-g4ex.onrender.com)
+
 ## Screenshots
 
 **Landing page**
-![Landing page](./screenshots/1-landing.png)
+![Landing page](./screenshots/s1.png)
 
-**Pipeline running**
-![Pipeline running](./screenshots/2-pipeline-running.png)
+**Pipeline complete — all 5 agents done**
+![Pipeline complete](./screenshots/s2.png)
 
-**Final report & feedback**
-![Final report](./screenshots/3-final-report.png)
+**Final research report**
+![Report](./screenshots/s3.png)
+![Report continued](./screenshots/s4.png)
+
+**Conclusion, sources & fact-check verification**
+![Conclusion and fact-check](./screenshots/s5.png)
 
 ## Pipeline
 
