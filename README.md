@@ -4,6 +4,17 @@ A 5-agent AI pipeline that researches any topic end-to-end: searches the web, sc
 the most relevant source, drafts a structured report, fact-checks it against the
 source material, and critiques the final output — all shown live in a Streamlit UI.
 
+## Screenshots
+
+**Landing page**
+![Landing page](./screenshots/1-landing.png)
+
+**Pipeline running**
+![Pipeline running](./screenshots/2-pipeline-running.png)
+
+**Final report & feedback**
+![Final report](./screenshots/3-final-report.png)
+
 ## Pipeline
 
 ```

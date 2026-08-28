@@ -1,6 +1,11 @@
 import streamlit as st
 import time
 from src.agents.agents import build_search_agent, build_reader_agent, writer_chain, critic_chain, fact_checker_chain
+from tenacity import retry, stop_after_attempt, wait_exponential
+
+@retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=2, max=10))
+def invoke_with_retry(chain, inputs):
+    return chain.invoke(inputs)
 
 # ── Page config ──────────────────────────────────────────────────────────────
 st.set_page_config(
@@ -533,7 +538,7 @@ if st.session_state.running and not st.session_state.done:
         if len(research_combined) > MAX_RESEARCH_CHARS:
             research_combined = research_combined[:MAX_RESEARCH_CHARS] + "\n\n[...truncated for length...]"
 
-        results["writer"] = writer_chain.invoke({
+        results["writer"] = invoke_with_retry(writer_chain,{
             "topic": topic_val,
             "research": research_combined
         })
